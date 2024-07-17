@@ -9,11 +9,11 @@ using Unity.VisualScripting;
 
 public class AdManager : MonoBehaviour
 {
-    public WindowMessage wM;
+    //public WindowMessage wM;
     //public GameObject windowMessage;
     private int Tag;
     private bool IsReward; // check xem đã có thưởng hay  chưa
-    public TextDebug textDebug;
+    //public TextDebug textDebug;
     public string appId = "ca-app-pub-1385093244148841~5602672977";// "ca-app-pub-3940256099942544~3347511713";
 #if UNITY_ANDROID
     string bannerId = "ca-app-pub-3940256099942544/6300978111";
@@ -39,7 +39,7 @@ public class AdManager : MonoBehaviour
     public void Log(string message)
     {
         Debug.Log(message);
-        textDebug.SetText(message);
+        //textDebug.SetText(message);
     }
     public void OnAdShowReward()
     {
@@ -76,7 +76,7 @@ public class AdManager : MonoBehaviour
             }
             else
             {
-                wM.Show("Ad is not ready");
+                //wM.Show("Ad is not ready");
                 OnAdShowFail("interstitial");
                 LoadInterstitialAd();
             }
@@ -93,7 +93,7 @@ public class AdManager : MonoBehaviour
             }
             else
             {
-                wM.Show("Ad is not ready");
+                //wM.Show("Ad is not ready");
                 OnAdShowFail("rewarded");
                 LoadRewardedAd();
             }
