@@ -14,11 +14,15 @@ public class AdManager : MonoBehaviour
     private int Tag;
     private bool IsReward; // check xem đã có thưởng hay  chưa
     //public TextDebug textDebug;
-    public string appId = "ca-app-pub-1385093244148841~5602672977";// "ca-app-pub-3940256099942544~3347511713";
+ /*   public string appId = "ca-app-pub-1385093244148841~5602672977";*/// "ca-app-pub-3940256099942544~3347511713";
+    public string appId = "ca-app-pub-8267376628184641~2117062992";// "ca-app-pub-3940256099942544~3347511713";
 #if UNITY_ANDROID
-    string bannerId = "ca-app-pub-3940256099942544/6300978111";
-    string interstitialId = "ca-app-pub-3940256099942544/1033173712";
-    string rewardedId = "ca-app-pub-3940256099942544/5224354917";
+    //string bannerId = "ca-app-pub-3940256099942544/6300978111";
+    //string interstitialId = "ca-app-pub-3940256099942544/1033173712";
+    //string rewardedId = "ca-app-pub-3940256099942544/5224354917";
+    string bannerId = "ca-app-pub-8267376628184641/6387480496";
+    string interstitialId = "ca-app-pub-8267376628184641/6508584209";
+    string rewardedId = "ca-app-pub-8267376628184641/4778885356";
 #elif UNITY_IPHONE
     string bannerId = "ca-app-pub-3940256099942544/2934735716";
     string interstitialId = "ca-app-pub-3940256099942544/4411468910";
